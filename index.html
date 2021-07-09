@@ -1,0 +1,165 @@
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="enter description"/>
+    <meta name="author" content="Douglas Guacarán, Jocelyn Navarro, Oscar Toro, Lissete Quintriqueo, Claudio Miranda."/>
+    <meta name="keywords" content="programa, frontend, programador, desarrollo, software, development"/>
+    <title>Evaluacion Final Modulo 3</title>
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/assets/dist/css/jquery-ui.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand mx-5" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                            <a class="nav-link mx-4" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link mx-4" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link mx-4" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span id="valorUF" class="text-light navbar-text text-right">
+                        U.F (Hoy):
+                    </span>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>Stock de productos disponibles</h3>
+                <table class="table">
+                    <thead>
+                        <th class="text-center p-1">
+                            #
+                        </th>
+                        <th class="text-center p-1">
+                            Producto
+                        </th>
+                        <th class="text-center p-1">
+                            ID
+                        </th>
+                        <th class="text-center p-1">
+                            Stock
+                        </th>
+                        <th class="text-center p-1">
+                            Precio
+                        </th>
+                    </thead>
+                    <tbody id="tablaProductos" class="text-center">
+
+                    </tbody>
+                </table>    
+            </div>
+            <div class="col-6">
+                <h3>Ventas</h3>
+                <table class="table">
+                    <thead>
+                        <th class="text-center p-1">
+                            #
+                        </th>
+                        <th class="text-center p-1">
+                            Producto
+                        </th>
+                        <th class="text-center p-1">
+                            Unidades Vendidas
+                        </th>
+                        <th class="text-center p-1">
+                            Cliente
+                        </th>
+                        <th class="text-center p-1">
+                            Total
+                        </th>
+                    </thead>
+                    <tbody id="tablaVentas" class="text-center">
+
+                    </tbody>
+                </table>    
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h3> Nueva Venta</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <form id="form">
+                            <div class="form-group">
+                                <label>Nombre del Producto</label>
+                                <input type="text" class="form-control" id="productName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label>Rut Cliente</label>
+                                <input type="text" class="form-control" id="userId">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Fecha (DD/MM/YYYY)</label>
+                                <input id="date" class="form-control" type="text" >
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form id="form">
+                            <div class="form-group">
+                                <label>Unidades</label>
+                                <input type="text" class="form-control" id="Quantities" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label>Nombre Cliente</label>
+                                <input type="text" class="form-control" id="costumerName">
+                            </div>
+                            <div class="text-right my-0">
+                                <div>
+                                    <button id="btn" type="button" class="btn btn-primary" style="background-color: blueviolet; border-color: blueviolet;">Agregar</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 my-5 card bg-info">
+                        <p class="text-light">Stock total <a id="productStock">producto</a></p>
+                        <hr>
+                        <p id="counter" class="text-light text-center" style="font-size: 30px;">0</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5 my-5 bg-success rounded">
+                        <p class="m-0 text-light">Total Ventas Acumulado <a id="productVenta">producto</a></p>
+                        <hr>
+                        <p id="totalVentas" class="text-light text-center total1">$ 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/dist/js/jquery-3.6.0.js"></script>
+    <script src='assets/dist/js/bootstrap.js'></script>
+    <script src='assets/dist/js/jquery-ui.js'></script>
+    <script src="assets/dist/js/main.js"></script>
+</body>
+</html>
