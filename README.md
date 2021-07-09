@@ -2,11 +2,8 @@
  
 # Grupo 1
 
-Svetlana Blizniakova
-Git-hub: @balin-sv
-
-Anna Aleinikova
-Git-hub:@anlarus
+Lissette Quintriqueo
+Git-hub:@Liss888
 
 Jocelyn Navarro
 Git-hub:@jocitanavarro 
